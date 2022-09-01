@@ -1,0 +1,15 @@
+package sec1;
+
+public class Var02 {
+	int a=10, b=20;  //전역 변수
+	
+	public static void main(String[] args) {
+		int a=100, b=200, c=300;  //지역 변수
+		System.out.println("a : "+a);
+	}
+	
+	public static int tot(int f, int g){  //매개변수
+		System.out.println("a+b="+(f+g));
+		return a+b;
+	}
+}

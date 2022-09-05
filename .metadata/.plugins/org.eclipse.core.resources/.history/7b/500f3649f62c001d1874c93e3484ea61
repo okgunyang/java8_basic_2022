@@ -1,0 +1,12 @@
+package sec1;
+
+public class Oper3 {
+
+	public static void main(String[] args) {
+		//문자열 결합
+		byte a='k',b='i',c='m';
+		
+		System.out.println("d="+a);
+		System.out.println(a+b+c+1004);
+	}
+}

@@ -1,0 +1,10 @@
+package sec1;
+//프로그램(Operation)의 모든 명령은 Op-code와 Operand로 이루어짐
+//a = a + b;
+//+ : 연산(명령) -> Op-code
+//a, b -> Operand
+public class Oper1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}

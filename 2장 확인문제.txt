@@ -1,0 +1,118 @@
+1. 자바에서 변수에 대한 설명 중 틀린 것은 무엇입니까?
+1) 변수는 하나의 값만 저장할 수 있다.
+2) 변수는 선언 시에 사용한 타입의 값만 저장할 수 있다.
+3) 변수는 변수가 선언된 중괄호({}) 안에서만 사용 가능하다.
+4) 변수는 초기값이 저장되지 않은 상태에서 읽을 수 있다.
+
+답: 4)
+
+
+
+2. 변수 이름으로 사용 가능한 것을 모두 선택하세요.
+1) modeName
+2) class
+3) 6hour
+4) $value
+5) _age
+6) int
+
+답: 1), 4), 5)
+명명규칙(p.31)
+- 첫 번째 글자는 문자이거나 '$', '_'이어야 하고 숫자로 시작할 수 없다. (필수)
+- 영어 대소문자가 구분된다. (필수)
+- 첫 문자는 영어 소문자로 시작하되, 다른 단어가 붙을 경우 첫 문자를 대문자로 한다. (관례)
+- 문자 수(길이)의 제한은 없다.
+- 자바 예약어는 사용할 수 없다. (필수)
+ 
+
+3. 다음 표의 빈칸에 자바의 기본 타입(Primitive Type) 8개를 적어보세요.
+ 크기/타입	1byte 		2byte 		4byte 		8byte 
+정수타입 		(byte) 		(short)
+				(char) 
+						(int) 
+								(long) 
+실수타입 						(float) 		(double) 
+논리타입 		(boolean) 
+ 
+
+4. 다음 코드에서 타입, 변수 이름, 리터럴에 해당하는 것을 적어 보세요.
+1	int age;
+2	age = 10;
+3	double price = 3.14;
+
+타입: int, double
+변수 이름: age, price
+리터럴: 10, 3.14
+ 
+
+5. 자동 타입 변환에 대한 내용입니다. 컴파일 에러가 발생하는 것은 무엇입니까?
+1	byte byteValue = 10;
+2	char charValue = 'A';
+
+1) int intValue = byteValue;
+2) int intValue = charValue;
+3) short shortValue = charValue;
+4) double doubleValue = byteValue;
+
+답: 3)
+ 
+자동 타입 변환(p.49~50)
+- 프로그램 실행 도중 자동적으로 타입 변환이 일어나는 것
+- 작은 크기를 가지는 타입이 큰 크기를 가지는 타입에 저장될 때 발생
+- 큰 크기 타입 = 작은 크기 타입
+- byte(1) < short(2) < int (4) < long(8) < float(4) < double(8)
+- int(4) < float(4) : 표현할 수 있는 값의 범위가 float이 더 크기 때문에 float이 더 큰 타입
+- 예외 - char 타입 : char의 범위가 0~65535이므로 음수가 저장될 수 없음 -> 음수가 저장될 수 있는 byte 타입을 char 타입으로 자동 변환 시킬 수 없음
+
+ 
+6. 강제 타입 변환(Casting)에 대한 내용입니다. 컴파일 에러가 발생하는 것은 무엇입니까?
+1	int intValue = 10;
+2	char charValue = 'A';
+3	double doubleValue = 5.7;
+4	String strValue = "A";
+
+1) double var = (double) intValue;
+2) byte var = (bate) intValue;
+3) int var = (int) doubleValue;
+4) char var = (char) strValue;
+
+답: 4)
+
+강제 타입 변환(p.52)
+- 강제적으로 큰 데이터 타입을 작은 데이터 타입으로 쪼개어서 저장하는 것
+
++) String -> char
+charAt() 메소드
+char var = strValue.charAt(0);
+
+ 
+
+7. 변수를 잘못 초기화한 것은 무엇입니까?
+1) int var1 = 10;
+2) long var = 10000000000L;
+3) char var3 = ''; //작은 따옴표 두 개가 붙어 있음
+4) double var4 = 10;
+5) float var5 = 10;
+
+답: 3)
+
+ 
+
+8. 연산식에서의 타입 변환 내용입니다. 컴파일 에러가 생기는 것은 무엇입니까?
+
+1	byte byteValue = 10;
+2	float floatValue = 2.5F;
+3	double doubleValue = 2.5;
+
+1) byte result = byteValue + byteValue;
+2) int result = 5 + byteValue;
+3) float result = 5 + floatValue;
+4) double result = 5 + doubleValue;
+ 
+답: 1)
+
+p.58
+자바는 정수 연산일 경우 int 타입을 기본으로 한다. 그 이유는 피연산자를 4byte 단위로 저장하기 때문이다. 크기가 4byte보다 작은 타입(byte, char, short)은 4byte인 int 타입으로 변환된 후 연산이 수행된다. 따라서 연산의 결과도 int 타입이 된다.
+
++) 연산식에서의 자동 타입 변환
+- 연산은 기본적으로 같은 타입의 피연산자 간에만 수행되기 때문에 서로 다른 타입의 피연산자가 있을 경우 두 피연산자 중 크기가 큰 타입으로 자동 변환된 후 연산을 수행한다.

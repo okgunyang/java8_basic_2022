@@ -1,0 +1,16 @@
+package sec1;
+
+public class Oper5 {
+	public static void main(String[] args) {
+		//비트(2진) 연산
+		int a=10, b=20, c=30, d=40, e, f, g, h;
+		e = c & d;
+		f = c | d;
+		g = ~(c & d);
+		h = c ^ d;
+		System.out.println("c & d => "+e);  //2진수 and
+		System.out.println("c | d => "+f);	//2진수 or
+		System.out.println("~(c & d) => "+g);  //2진수 보수
+		System.out.println("c ^ d => "+h);	//
+	}
+}

@@ -1,0 +1,10 @@
+package sec1;
+//제어문 : 프로그램 상 작업의 흐름을 제어하기 위한 명령문
+public class Cont1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

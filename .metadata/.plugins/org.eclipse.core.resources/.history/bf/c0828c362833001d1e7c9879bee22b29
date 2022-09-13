@@ -1,0 +1,27 @@
+package sec2;
+
+import java.util.Scanner;
+
+public class Condition1 {
+	public static void main(String[] args) {
+		System.out.println("점수 입력 : ");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+/*		if(조건식){
+			참일때실행문;
+		} else {
+			거짓일때실행문;
+		}
+*/		
+		if(num>=80) {
+			System.out.println("합격");
+		} else {
+			System.out.println("불합격");
+		}
+		
+		if(num<60) System.out.println("재평가");
+		else System.out.println("과목이수");
+		
+		sc.close();
+	}
+}

@@ -1,0 +1,13 @@
+package sec2;
+
+import java.util.Scanner;
+
+public class Condition1 {
+	public static void main(String[] args) {
+		System.out.println("점수 입력 : ");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		sc.close();
+	}
+}

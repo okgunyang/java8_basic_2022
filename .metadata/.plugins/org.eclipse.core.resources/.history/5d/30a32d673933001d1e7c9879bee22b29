@@ -1,0 +1,8 @@
+package sec2;
+
+public class Condition5 {
+	public static void main(String[] args) {
+		Scanner sc = Scanner(System.in);
+		
+	}
+}

@@ -1,0 +1,12 @@
+package sec3;
+
+public class Loop6 {
+	public static void main(String[] args) {
+		int tot=0;
+		for(int i=0;i<=100;i++){ //101번 실행
+			if(i%2==1) continue;
+			tot+=i;
+		}
+		System.out.println("0~100 합계 : "+tot);
+	}
+}

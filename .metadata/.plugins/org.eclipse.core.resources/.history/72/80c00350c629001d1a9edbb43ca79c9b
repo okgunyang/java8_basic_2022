@@ -1,7 +1,0 @@
-package sec1;
-//변수(Variable) : 컴퓨터는 작업에 필요한 데이터를 메모리에 저장하게 되는데 개발자가 프로그램을 처리하기 위해 필요한 데이터를 중간 중간에 메모리에 저장해야 한다. 그러나 그 위치를 모르면, 저장된 값을
-public class Var01 {
-	public static void main(String[] args) {
-		
-	}
-}

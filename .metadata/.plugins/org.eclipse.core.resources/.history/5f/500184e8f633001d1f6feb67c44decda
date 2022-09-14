@@ -1,0 +1,13 @@
+package sec3;
+
+import java.util.Scanner;
+
+public class Loop2 {
+	public static void main(String[] args) {
+		int jum[] = new int[5];
+		for(int n=0;n<jum.length;n++){
+			System.out.println(n+"번째 점수 : "+jum[n]);
+		}
+		Scanner sc = new Scanner(System.in);
+	}
+}

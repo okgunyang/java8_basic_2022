@@ -1,0 +1,9 @@
+package sec4;
+
+public class Ex7 {
+	public static void main(String[] args) {
+		int money=0, balance=0;
+		Scanner sc = new Scanner(System.in);
+		
+	}
+}

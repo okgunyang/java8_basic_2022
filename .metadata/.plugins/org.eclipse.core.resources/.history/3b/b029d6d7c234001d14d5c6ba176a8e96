@@ -1,0 +1,8 @@
+package sec4;
+
+public class Ex4 {
+	public static void main(String[] args) {
+		int a = (int) Math.random()*6; //0~1 까지의 아무 수
+		System.out.println("임의의 수 : "+a);
+	}
+}

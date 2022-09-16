@@ -1,0 +1,8 @@
+package sec2;
+
+public class Ref1 {
+	public static void main(String[] args) {
+		String[] names = {"kim","lee","park"};
+		
+	}
+}

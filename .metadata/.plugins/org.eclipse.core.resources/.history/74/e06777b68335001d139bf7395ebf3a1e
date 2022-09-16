@@ -1,0 +1,15 @@
+package sec1;
+
+public class Type1 {
+	public static void main(String[] args) {
+		//Primitive Type(기본형) : 하나의 저장소(변수)에 하나의 데이터만 저장되는 타입
+		boolean a=true;
+		byte b=120;
+		char c='a';
+		short d=150;
+		int e;
+		long f;
+		float g;
+		double h;
+	}
+}

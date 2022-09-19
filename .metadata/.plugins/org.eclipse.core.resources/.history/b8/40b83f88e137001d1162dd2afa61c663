@@ -1,0 +1,8 @@
+package sec1;
+
+public class MemberEx {
+	public static void main(String[] args) {
+		Member mem1 = new Member();
+		mem1.setId("kkt");
+	}
+}

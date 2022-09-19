@@ -1,0 +1,13 @@
+package sec1;
+
+import s2.
+
+public class Member {
+	String id;		//클래스의 멤버 필드
+	String password;
+	String name;
+	String address;
+	String tel;
+	String reg_date;
+	
+}

@@ -1,0 +1,6 @@
+package sec1;
+
+public class MemberContoller {
+	Member member = new Member();
+	
+}

@@ -1,0 +1,11 @@
+package sec1;
+
+public class MemberContoller {
+	Member mem = new Member();
+	
+	public void join(String id, String password, String name){
+		mem.setId(id);
+		mem.setPassword(password);
+		mem.setName(name);
+	}
+}

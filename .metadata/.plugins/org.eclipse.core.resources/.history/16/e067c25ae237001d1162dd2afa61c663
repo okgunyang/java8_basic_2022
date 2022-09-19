@@ -1,0 +1,13 @@
+package sec1;
+
+public class MemberEx {
+	public static void main(String[] args) {
+		Member mem1 = new Member();
+		mem1.setId("kkt");
+		mem1.setPassword("1234");
+		
+		System.out.println("아이디 : "+mem1.getId());
+		System.out.println("비밀번호 : "+mem1.getPassword());
+		Member mem2 = new Member();
+	}
+}

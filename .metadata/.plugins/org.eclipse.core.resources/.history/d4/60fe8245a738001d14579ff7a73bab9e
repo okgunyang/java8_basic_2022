@@ -1,0 +1,8 @@
+package sec2;
+
+public class Car {
+	String name;
+	String fuel;
+	int cc;
+	int speed;
+}

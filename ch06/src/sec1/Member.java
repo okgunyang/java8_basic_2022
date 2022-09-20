@@ -6,12 +6,12 @@ import s2.Week;
 //default : 접근 제한자를 생략했을 경우이며, 같은 패키지 내에서 접근 가능
 //private : 현재 클래스 내부에서만 접근 가능
 public class Member {
-	private String id;		//클래스의 멤버 필드(Field)
-	private String password;
-	private String name;
-	private String address;
-	private String tel;
-	private String reg_date;
+	public String id;		//클래스의 멤버 필드(Field)
+	public String password;
+	public String name;
+	public String address;
+	public String tel;
+	public String reg_date;
 	
 	//아래 부분은 기본 생성자(Constructor)로서 선언하지 않아도 자동으로 자바가 생성자를 묵시적으로 선언함
 	public Member() { }

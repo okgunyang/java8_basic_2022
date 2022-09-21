@@ -1,0 +1,13 @@
+package sec2;
+
+public class AccountEx {
+	public static void main(String[] args) {
+		Account acc1 = new Account();
+		//acc1.setBalance(0);
+		acc1.setAccount("212-12-465897");
+		acc1.setOwner("김기태");
+		acc1.runDeposit(150000);
+		acc1.runWithdraw(90000);
+		
+	}
+}

@@ -1,0 +1,11 @@
+package sec2;
+
+public class Student {
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	public Student() { }
+	
+}

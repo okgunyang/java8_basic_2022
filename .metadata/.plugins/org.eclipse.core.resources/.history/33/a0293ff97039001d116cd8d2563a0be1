@@ -1,0 +1,7 @@
+package sec2;
+
+public class Account {
+	private String account;
+	private String owner;
+	
+}

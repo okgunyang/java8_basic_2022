@@ -17,9 +17,10 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.insightech.er.wizard.NewDiagramWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="com.objectaid.uml.new.classdiagram" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.insightech.er"/>
+			<item value="com.objectaid.uml.new"/>
 			<item value="org.eclipse.datatools.sql"/>
 		</list>
 	</section>
@@ -33,5 +34,7 @@
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.datatools"/>
 		</list>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>

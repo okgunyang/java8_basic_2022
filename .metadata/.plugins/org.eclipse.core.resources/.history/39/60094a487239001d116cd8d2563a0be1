@@ -1,8 +1,8 @@
 package sec2;
 
-public class Condition5 {
+public class AccountEx {
 	public static void main(String[] args) {
-		Scanner sc = Scanner(System.in);
+		Account acc1 = new Account();
 		
 	}
 }

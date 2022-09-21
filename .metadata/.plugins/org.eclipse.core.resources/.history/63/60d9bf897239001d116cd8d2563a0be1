@@ -1,0 +1,11 @@
+package sec2;
+
+public class AccountEx {
+	public static void main(String[] args) {
+		Account acc1 = new Account();
+		//acc1.setBalance(0);
+		acc1.setAccount("212-12-456789");
+		acc1.setOwner("김기태");
+		
+	}
+}

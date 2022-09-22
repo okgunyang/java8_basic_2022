@@ -1,9 +1,0 @@
-package sec3;
-
-public class Loop1 {
-	public static void main(String[] args) {
-		
-		int[] data = {90,80,70,65,75,95,85,60,90,95};  //data[0]~data[9]
-		
-	}
-}

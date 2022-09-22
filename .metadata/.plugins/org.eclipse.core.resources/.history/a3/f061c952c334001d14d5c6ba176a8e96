@@ -1,9 +1,0 @@
-package sec4;
-
-public class Ex4 {
-	public static void main(String[] args) {
-		int a = (int) (Math.random()*6)+1; //1~6 까지의 아무 수
-		int b = (int) (Math.random()*6)+1;
-		System.out.println("("+a+", "+b+")");
-	}
-}

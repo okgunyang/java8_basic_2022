@@ -8,9 +8,9 @@
 ---
 # 유용한 링크 (JAVA/JSP)
 - JavaAPI[docs.oracle](https://docs.oracle.com/en/java/javase/16/)
-- JSP set content type utf-8[tistory.blog](https://cbw1030.tistory.com/62)
-- JSP contextPath [tistory.blog](https://suyou.tistory.com/78)
-- JDBC Description (MySQL for Java)[tistory.blog](https://victorydntmd.tistory.com/145)
+- JSP set content type utf-8[](/62)
+- JSP contextPath [](/78)
+- JDBC Description (MySQL for Java)[](https://victorydntmd.tistory.com/145)
 - Servlet Multiple URL pattern [stackoverflow.com](https://stackoverflow.com/questions/8995353/many-url-pattern-for-the-same-servlet)
 
 ---
@@ -226,10 +226,10 @@ article.title = "제목";
 - .json / java Map / Object 각각의 형식으로 변환하여 데이터를 다룰수 있는 기능이 내제되어있는 라이브러리.
 ---
 ## ObjectMapper 
-- 관련 링크[tistory.blog](https://hanburn.tistory.com/99)
-- 관련 링크[tistory.blog](https://interconnection.tistory.com/137)
-- 관련 링크[tistory.blog](https://engaspect.tistory.com/27)
-- 관련 링크[tistory.blog](https://alkhwa-113.tistory.com/entry/9%EC%A3%BC%EC%B0%A8-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC?category=921157)
+- 관련 링크[](https://hanburn.tistory.com/99)
+- 관련 링크[](https://interconnection.tistory.com/137)
+- 관련 링크[](https://engaspect.tistory.com/27)
+- 관련 링크[](https://alkhwa-113.tistory.com/entry/9%EC%A3%BC%EC%B0%A8-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC?category=921157)
 
 ---
 
@@ -332,9 +332,9 @@ public class Member {
  - DTO의 클래스 내부의 각각의 필드는 DB에서 column에 대응한다. 따라서 JPA에서 하나의 엔티티 타입을 생성한다는 하나의 클래스를 생성한다라는 의미와 상등하다.
 
 ## Map, HashMap, ArrayList
-- 관련 링크 [tistory.blog](https://coding-factory.tistory.com/556)
-- 관련 링크 [tistory.blog](https://sundrystore.tistory.com/15)
-- 관련 링크 [tistory.blog](https://moonong.tistory.com/5)
+- 관련 링크 [](https://coding-factory.tistory.com/556)
+- 관련 링크 [](https://sundrystore.tistory.com/15)
+- 관련 링크 [](https://moonong.tistory.com/5)
 - 관련 링크 [w3school.com](https://www.w3schools.com/java/java_hashmap.asp)
 - 관련 링크 [BLOG](https://codechacha.com/ko/java-map-hashmap/)
 ---
@@ -369,8 +369,8 @@ public void method(Int... args) {}
 - 내용
 ---
 ## ArrayList 정렬
-- 관련링크 [tistory.blog](https://manorgass.tistory.com/60)
-- 관련링크 [tistory.blog](https://offbyone.tistory.com/154)
+- 관련링크 [](https://manorgass.tistory.com/60)
+- 관련링크 [](https://offbyone.tistory.com/154)
 
 <!--
 자바 스트림 
@@ -390,7 +390,7 @@ https://futurecreator.github.io/2018/08/26/java-8-streams/
 ## java concurrenthashmap
 ## lambda
 ## Enum
-- 관련 링크[tistory.blog](https://itmining.tistory.com/149)
+- 관련 링크[](https://itmining.tistory.com/149)
 ## stream()
 ```
         return store.values().stream()
@@ -401,10 +401,10 @@ https://futurecreator.github.io/2018/08/26/java-8-streams/
 ---
 # Java - WEB 공통
 ## JDBC Driver
-- 관련 링크 : [tistory.blog](https://dyjung.tistory.com/50)
+- 관련 링크 : [](https://dyjung.tistory.com/50)
 - 관련 링크 : [naver.blog](https://m.blog.naver.com/bgpoilkj/221672288866)
-- 관련 링크 : [tistory.blog](https://sesok808.tistory.com/36)
-- 관련 링크 : [tistory.blog](https://hoit89.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EC%BF%BC%EB%A6%AC%ED%85%8C%EC%9D%B4%EB%B8%94columnrow)
+- 관련 링크 : [](https://sesok808.tistory.com/36)
+- 관련 링크 : [](https://hoit89.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EC%BF%BC%EB%A6%AC%ED%85%8C%EC%9D%B4%EB%B8%94columnrow)
 ---
 ### JDBC(Java Database Connectivity)
 - JDBC는 자바에서 데이터베이스(DB)에 접속할 수 있는 기능을 제공하는 자바API이다. JDBC는 데이터베이스에서 자료를 쿼리* 거나 업데이트 하는 방법을 제공한다.
@@ -462,7 +462,7 @@ try {
 ---
 ## 순환참조
 ## Builder 패턴
-- 관련 링크[tistory.blog](https://royleej9.tistory.com/entry/Lombok-Builder)
+- 관련 링크[](https://royleej9.tistory.com/entry/Lombok-Builder)
 - 관련 링크[github.blog](https://johngrib.github.io/wiki/builder-pattern/)
 - 관련 링크 [github.blog](https://cheese10yun.github.io/lombok/)
 - 관련 링크[]()
@@ -472,7 +472,7 @@ try {
 ---
 # JSP 학습
 ## JSP
- - 관련 링크 [tistory.blog](https://mangkyu.tistory.com/14)
+ - 관련 링크 [](https://mangkyu.tistory.com/14)
 ---
 
 - JSP 란
@@ -525,15 +525,15 @@ try {
 
 ```
 ## JSP - Attribute
-- 관련 링크 : [tistory.blog](https://gangzzang.tistory.com/entry/JSP-%EA%B8%B0%EB%B3%B8-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%86%8D%EC%84%B1Attribute)
-- 관련 링크 : [tistory.blog](https://gap85.tistory.com/entry/JSP-Attribute-%EC%86%8D%EC%84%B1)
+- 관련 링크 : [](https://gangzzang.tistory.com/entry/JSP-%EA%B8%B0%EB%B3%B8-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%86%8D%EC%84%B1Attribute)
+- 관련 링크 : [](https://gap85.tistory.com/entry/JSP-Attribute-%EC%86%8D%EC%84%B1)
 ---
 
 ## JSP Model Architecture
 ### Model 2 MVC
 - 관련링크 [naver.blog](https://m.blog.naver.com/jhc9639/220967034588)
 - 관련링크 [wikipedia.org](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
-- 관련링크 [tistory.blog](https://msmk530.tistory.com/88)
+- 관련링크 [](https://msmk530.tistory.com/88)
 ---
 - MVC for java
   - M: 모델(Service, Repository(DAO), DTO(VO))
@@ -543,7 +543,7 @@ try {
 #### DTO, DAO
 ## JSP WEB 디자인 패턴
 ### 1. 어댑터 패턴
-- 관련 링크 : [tistory.blog](https://niceman.tistory.com/141)
+- 관련 링크 : [](https://niceman.tistory.com/141)
 - 관련 링크 : [javagists.com](https://www.javagists.com/adapter-design-pattern)
 ---
 - 어댑터 패턴은 한 클래스의 인터페이스를 사용하고자 하는 다른 인터페이스로 변환할 때 주로 사용하는 것이며, 이를 이용함으로서 인터페이스 호환성이 맞지 않아 같이 사용할 수 없는 클래스를 연관 관계로 연결하여 사용할 수 있도록 하는 객체지향 디자인 패턴 중 하나이다.
@@ -555,9 +555,9 @@ try {
 
 ---
 ### JAVA 캡슐화 (Encapsulation)
-- 참고 링크 [tistory.blog](https://radait.tistory.com/5)
-- 참고 링크 [tistory.blog](https://javacpro.tistory.com/31)
-- 참고 링크 [tistory.blog](https://mainpower4309.tistory.com/7)
+- 참고 링크 [](https://radait.tistory.com/5)
+- 참고 링크 [](https://javacpro.tistory.com/31)
+- 참고 링크 [](https://mainpower4309.tistory.com/7)
 ---
 #### 캡슐화(Encapuslation)
 
@@ -577,7 +577,7 @@ try {
 ## Servlet
  - 관련 링크 : [github.blog](https://gmlwjd9405.github.io/2018/10/28/servlet.html)
  - 관련 링크 : [naver.blog](https://m.blog.naver.com/acornedu/221128616501)
- - 관련 링크 : [tistory.blog](https://mangkyu.tistory.com/14)
+ - 관련 링크 : [](https://mangkyu.tistory.com/14)
 ---
  - 서블릿(Servlet)이란?
  ```
@@ -701,7 +701,7 @@ accept 등을 해야하지만 서블릿 컨테이너는 이러한 기능을 API�
  - 따라서 이런것을 미연에 방지하고자 규약으로 정해놓은 겅시 web-inf의 디렉토리에 있는 jsp파일은 서블릿을 통하여 접촉할 수 있고 직접적인 접촉은 막아놓은 것이다.
  - 이와 같은 이유로서 jsp는 web-inf디렉토리에 위치시키고 사용하는것이다.
 ## Servlet Uri Mappinng
-- 관련 링크 : [tistory.blog](https://codevang.tistory.com/194)
+- 관련 링크 : [](https://codevang.tistory.com/194)
 
 ---
  - 서블릿에서 URI 를 매핑하는 방법은 두가지가 존재한다.
@@ -794,9 +794,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 
 
 ## Dispatcher
-- 관련 링크 [tistory.blog](https://cbts.tistory.com/286)
-- 관련 링크 [tistory.blog](https://velog.io/@lzhxxn/Servlet-Dispatcher%EB%B0%A9%EC%8B%9D%EA%B3%BC-Redirect-%EB%B0%A9%EC%8B%9D)
-- 관련 링크 [tistory.blog](https://mangkyu.tistory.com/18)
+- 관련 링크 [](https://cbts.tistory.com/286)
+- 관련 링크 [](https://velog.io/@lzhxxn/Servlet-Dispatcher%EB%B0%A9%EC%8B%9D%EA%B3%BC-Redirect-%EB%B0%A9%EC%8B%9D)
+- 관련 링크 [](https://mangkyu.tistory.com/18)
 ---
 
 ### Servlet - Controller 관계

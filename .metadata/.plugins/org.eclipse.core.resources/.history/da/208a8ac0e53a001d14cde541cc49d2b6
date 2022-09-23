@@ -1,0 +1,9 @@
+package sec3;
+/* 싱글톤 */
+public class Singletone {
+	private static Singletone single = new Singletone();
+	private Singletone() {}
+	static Singletone getInstance(){
+		return single;
+	}
+}

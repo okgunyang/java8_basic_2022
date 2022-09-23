@@ -35,5 +35,7 @@ public class CarEx {
 		System.out.println("비고0 : "+car_0.remark);
 		System.out.println("비고1 : "+car_1.remark);
 		System.out.println("비고 2 : "+car_2.remark);
+		//정적 멤버 : Car.remark;
+		//인스턴스 멤버 : car_0.remark;
 	}
 }

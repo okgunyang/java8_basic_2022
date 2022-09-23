@@ -1,0 +1,8 @@
+package kr.co.thejoeun.controller;
+
+public class CarCtrl3 {
+	static void main(){
+		CarCtrl car1 = new CarCtrl();
+		
+	}
+}

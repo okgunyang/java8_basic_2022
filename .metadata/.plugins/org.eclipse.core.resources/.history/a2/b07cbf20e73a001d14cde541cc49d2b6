@@ -1,0 +1,6 @@
+package sec3;
+
+public class FinalClass1 {
+	final static double PI = 3.14;
+	
+}

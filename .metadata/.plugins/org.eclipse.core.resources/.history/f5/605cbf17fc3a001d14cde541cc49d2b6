@@ -1,0 +1,7 @@
+package sec4;
+
+public class Printer {
+	public void println(int data){
+		System.out.println(data);
+	}
+}

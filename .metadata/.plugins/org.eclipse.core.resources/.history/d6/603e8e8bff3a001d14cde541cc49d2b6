@@ -1,0 +1,12 @@
+package sec4;
+
+import java.util.Scanner;
+
+public class BankApplication {
+	private static Account2[] accountArray = new Account2[100];
+	private static Scanner scanner = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+			
+	}
+}

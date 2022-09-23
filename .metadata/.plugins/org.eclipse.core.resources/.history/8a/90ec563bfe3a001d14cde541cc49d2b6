@@ -1,0 +1,6 @@
+package sec4;
+
+public class Account {
+	private int balance=0;
+	
+}

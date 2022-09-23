@@ -1,0 +1,12 @@
+package kr.co.thejoeun.view;
+
+import kr.co.thejoeun.controller.CarCtrl;
+
+
+public class CarView extends CarCtrl {
+		CarCtrl car1 = new CarCtrl();
+		car1.item1 = 10;
+		car1.item2 = 20;
+		car1.item3 = 30;
+		car1.item4 = 40;
+}

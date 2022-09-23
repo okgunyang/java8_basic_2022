@@ -1,0 +1,5 @@
+package kr.co.thejoeun.view;
+
+public class CarView {
+	CarCtrl ctrl = new CarCtrl();
+}

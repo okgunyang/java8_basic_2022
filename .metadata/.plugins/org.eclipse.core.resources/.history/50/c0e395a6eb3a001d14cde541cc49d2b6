@@ -1,0 +1,8 @@
+package kr.co.thejoeun.controller;
+
+public class CarCtrl3 {
+	CarCtrl car1 = new CarCtrl();
+	car1.item1 = 10;
+	car1.item2 = 20;
+	
+}

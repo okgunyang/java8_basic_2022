@@ -1,0 +1,11 @@
+package kr.co.thejoeun.controller;
+
+import kr.co.thejoeun.*;
+
+public class CarCtrl {
+	CarDTO car1 = new CarDTO();
+	public int item1=1;
+	int item2=2;
+	protected int item3=3;
+	private int item4=4;
+}

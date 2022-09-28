@@ -1,0 +1,11 @@
+package sec3;
+
+public class DbEx {
+
+	public static void main(String[] args) {
+		Dbjob db;
+		
+
+	}
+
+}

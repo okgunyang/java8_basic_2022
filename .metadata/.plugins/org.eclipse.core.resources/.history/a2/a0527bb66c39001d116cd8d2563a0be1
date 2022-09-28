@@ -1,8 +1,0 @@
-package sec2;
-
-public class StudentEx {
-	public static void main(String[] args) {
-		Student st1 = new Student("김기태", 90,80,90);
-		
-	}
-}

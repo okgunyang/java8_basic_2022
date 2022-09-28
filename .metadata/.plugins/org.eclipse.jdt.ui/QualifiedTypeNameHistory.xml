@@ -7,4 +7,10 @@
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="sec4.Student"/>
+<fullyQualifiedTypeName name="sec4.ElementaryStudent"/>
+<fullyQualifiedTypeName name="sec2.Audio"/>
+<fullyQualifiedTypeName name="sec2.RemoteControl"/>
+<fullyQualifiedTypeName name="sec2.Television"/>
+<fullyQualifiedTypeName name="sec3.Soundable"/>
 </qualifiedTypeNameHistroy>

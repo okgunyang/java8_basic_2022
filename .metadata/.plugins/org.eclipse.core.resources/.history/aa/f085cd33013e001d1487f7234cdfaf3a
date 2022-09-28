@@ -1,0 +1,10 @@
+package sec3;
+
+public class Tire {
+	//멤버 필드
+	public int maxRotation;	//최대 회전수(타이어 수명)
+	public int accumulatedRotation;	//누적 회전수
+	public String location;
+	
+	
+}

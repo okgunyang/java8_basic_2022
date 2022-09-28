@@ -1,0 +1,13 @@
+package sec2;
+
+class A {}
+class B extends A { }
+class C extends A { }
+
+class D extends B { }
+class E extends C { }
+public class PromotionEx {
+	public static void main(String[] args) {
+		
+	}
+}

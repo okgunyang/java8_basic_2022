@@ -1,0 +1,9 @@
+package sec1;
+
+public class Child extends Parent {
+	int field3;
+	String field4;
+	
+	public String method3() { return "문자열";	}
+	public void method4() { System.out.println("메소드4"); }
+}

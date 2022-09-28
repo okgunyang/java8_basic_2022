@@ -1,0 +1,19 @@
+package sec5;
+
+class A {}
+class B extends A { }
+class C extends A { }
+
+class D extends B { }
+class E extends B { }
+class F extends C { }
+public class PromotionEx {
+	public static void main(String[] args) {
+		//B b = new B();  //- 객체 선언 및 생성
+		//B b = (B) new A(); //- 객체 강제 형변환하여 생성
+		//B b = new D();
+		//B b = new E(); 
+		method(new B()){}
+	}
+	static void method(B b) { } 
+}

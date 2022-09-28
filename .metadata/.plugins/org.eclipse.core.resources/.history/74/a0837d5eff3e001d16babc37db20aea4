@@ -1,0 +1,8 @@
+package sec3;
+
+public class Cat {
+	@Override
+    String sound(){
+    	System.out.println("야옹");
+    }
+}

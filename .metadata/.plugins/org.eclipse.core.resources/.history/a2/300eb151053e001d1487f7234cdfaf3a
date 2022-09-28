@@ -1,0 +1,8 @@
+package sec3;
+
+public class MotorCycle {
+	Tire frontTire = new Tire(8, "앞");
+	Tire backTire = new Tire(6, "뒤");
+	
+	
+}

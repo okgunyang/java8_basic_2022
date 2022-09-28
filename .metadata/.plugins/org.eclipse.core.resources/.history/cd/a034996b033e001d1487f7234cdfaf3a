@@ -1,0 +1,10 @@
+package sec3;
+
+public class Car {
+	Tire frontLeftTire = new Tire(7, "앞왼쪽");
+	Tire frontRightTire = new Tire(4, "앞오른쪽");
+	Tire backLeftTire = new Tire(5, "뒤왼쪽");
+	Tire backRightTire = new Tire(3, "뒤오른쪽");
+	
+	
+}

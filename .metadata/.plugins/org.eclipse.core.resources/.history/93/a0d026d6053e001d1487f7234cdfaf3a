@@ -1,0 +1,7 @@
+package sec3;
+
+public class HankookTire extends Tire {
+	public HankookTire(int maxRotation, String location){
+		
+	}
+}

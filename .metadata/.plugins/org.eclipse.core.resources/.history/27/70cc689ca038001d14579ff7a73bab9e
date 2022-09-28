@@ -1,7 +1,0 @@
-package sec1;
-
-public class User extends Member {
-	private int visited;
-	public User(){ }
-	
-}

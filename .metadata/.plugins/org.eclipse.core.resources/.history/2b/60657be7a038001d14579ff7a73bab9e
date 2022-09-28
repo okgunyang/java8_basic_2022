@@ -1,7 +1,0 @@
-package sec1;
-//Member는 부모 클래스, User는 자식 클래스
-public class User extends Member {
-	private int visited;
-	public User(){ }
-	super(String id, String password);
-}

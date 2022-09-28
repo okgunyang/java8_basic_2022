@@ -1,0 +1,13 @@
+package sec1;
+
+public class ChildEx1 {
+	public static void main(String[] args) {
+		Child c1 = new Child();
+		c1.field1 = 10;
+		c1.field2 = "kim";
+		c1.field3 = 20;
+		
+		Parent c2 = new Parent();
+		
+	}
+}

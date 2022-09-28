@@ -1,0 +1,11 @@
+package sec2;
+
+class A {}
+class B extends A { }
+class C extends A { }
+
+public class PromotionEx {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}

@@ -1,9 +1,0 @@
-package sec1;
-
-public class MemberContoller {
-	Member mem = new Member();
-	
-	public void join(String id, String password, String name){
-		
-	}
-}

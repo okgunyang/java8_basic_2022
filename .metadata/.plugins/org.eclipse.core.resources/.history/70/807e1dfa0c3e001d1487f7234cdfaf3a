@@ -1,0 +1,11 @@
+package sec4;
+
+public abstract class Student {
+	String bun;
+	String name;
+	int jum1;
+	int jum2;
+	int jum3;
+	
+	abstract int computeTot(int jum1, int jum2, int jum3);
+}

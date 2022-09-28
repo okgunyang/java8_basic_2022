@@ -1,0 +1,11 @@
+package sec2;
+
+public class DmbPhoneEx {
+
+	public static void main(String[] args) {
+		CellPhone p1 = new CellPhone();
+		CellPhone p2 = new DmbPhone();
+		
+	}
+
+}

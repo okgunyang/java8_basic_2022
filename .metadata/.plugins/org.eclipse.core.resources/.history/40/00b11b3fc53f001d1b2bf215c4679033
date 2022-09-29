@@ -1,0 +1,6 @@
+package sec2;
+
+public class RunException extends Exception {
+	public RunException() {} 
+	
+}

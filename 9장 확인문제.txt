@@ -1,0 +1,133 @@
+1.  중첩 멤버 클래스에 대한 설명으로 틀린 것은 무엇입니까?
+① 인스턴스 멤버 클래스는 바깥 클래스의 객체가 있어야 사용될 수 있다. 
+② 정적 멤버 클래스는 바깥 클래스의 객체가 없어도 사용될 수 있다.
+③ 인스턴스 멤버 클래스 내부에는 바깥 클래스의 모든 필드와 메소드를 사용할 수 있다.
+④ 정적 멤버 클래스 내부에는 바깥 클래스의 인스턴스 필드를 사용할 수 있다. 
+
+정답 - 4번 (정적 멤버 클래스 내부에는 바깥 클래스의 인스턴스 필드를 사용할 수 있다.)
+해설 - 정적 멤버 클래스는 바깥 클래스의 객체가 없어도 사용할 수 있다.
+            따라서 정적 멤버 클래스 내부에 바깥 클래스의 인스턴스 필드를 사용할 수 없다. 
+
+
+
+
+2. 로컬 클래스에 대한 설명으로 틀린 것은 무엇입니까?
+① 로컬 클래스는 메소드 내부에 선언된 클래스를 말한다.
+② 로컬 클래스는 바깥 클래스의 모든 필드와 메소드를 사용할 수 있다.
+③ 로컬 클래스는 static 키워드를 이용해서 정적 클래스로 만들 수 있다. 
+④ final 특성을 가진 매개 변수나 로컬 변수만 로컬 클래스 내부에서 사용할 수 있다.
+
+정답 - 3번 (로컬 클래스는 static 키워드를 이용해서 정적 클래스로 만들 수 있다.)
+해설 - 로컬 클래스는 static 키워드를 사용할 수 없다.
+
+
+
+ 
+
+3. 익명 객체에 대한 설명으로 틀린 것은 무엇입니까?
+① 익명 객체는 클래스를 상속하거나 인터페이스를 구현해야만 생성될 수 있다.
+② 익명 객체는 필드, 매개 변수, 로컬 변수의 초기값으로 주로 사용된다.
+③ 익명 객체에는 생성자를 선언할 수 있다. 
+④ 부모 클래스나 인터페이스에 선언된 필드와 메소드 이외에 다른 필드와 메소드를 선언할 수 있지만, 익명 객체 내부에서만 사용이 가능하다.
+
+정답 - 3번(익명 객체는 생정자를 선언할 수 있다.)
+해설 - 익명 객체는 생성자를 따로 추가할 수 없다.
+
+
+
+
+
+
+4. 다음과 같이 Car 클래스 내부에 Tire와 Engine이 멤버 클래스로 선언되어 있습니다. NestedClassExample에서 멤버 클래스의 객체를 생성하는 코드를 작성해보세요.
+
+public class Car {
+    class Tire{}
+    static class Engine{}
+}
+public class NestedClassExample {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+
+        Car.Tire tire = myCar.new Tire();
+        Car.Engine engine = new Car.Engine();
+    }
+}
+
+
+
+
+ 
+
+5. AnonymousExample 클래스의 실행 결과를 보고 Vehicle 인터페이스의 익명 구현 객체를 이용해서 필드, 로컬 변수의 초기값과 메소드의 매개값을 대입해보세요.
+
+public interface Vehicle {
+    public void run();
+}
+
+public class Anonymous {
+    Vehicle field = new Vehicle() {
+        @Override
+        public void run() {
+            System.out.println("자전거가 달립니다.");
+        }
+    };
+
+    void method1() {
+        Vehicle localVar = new Vehicle() {
+            @Override
+            public void run() {
+                System.out.println("승용차가 달립니다.");
+            }
+        };
+        localVar.run();
+    }
+
+    void method2(Vehicle v1){
+        v1.run();
+    }
+}
+public class AnonymousExample {
+    public static void main(String[] args) {
+        Anonymous anony = new Anonymous();
+        anony.field.run();
+        anony.method1();
+        anony.method2(
+            new Vehicle(){
+                @Override
+                public void run(){
+                    System.out.println("트럭이 달립니다.");
+                }
+            });
+    }
+}
+
+
+
+ 
+
+6. 다음 Chatting 클래스는 컴파일 에러가 발생합니다. 원인이 무엇입니까?
+
+public class Chatting {
+
+    void startChat(String chatId) {
+        String nickName = null;
+        nickName = chatId;
+        Chat chat = new Chat() {
+            @Override
+            public void start() {
+                while (true) {
+                    String inputData = "안녕하세요";
+                    String message = "[" + nickName + "]" + inputData;
+                    sendMessage(message);
+                }
+            }
+            chat.start();
+        };
+    }
+
+    class Chat{
+        void start(){}
+        void sendMessage(String message){}
+    }
+}
+답: Chat 로컬 클래스에서 nickName이라는 로컬 변수를 사용하고 있으므로 final 특성을 갖게 되는데, 이 nickName 변수를 null로 수정하고 있고 이 때문에 컴파일 에러가 발생함. String nickName = chatId; 로 막바로 chatId 값을 넣어주는 방식으로 코드를 수정하면 컴파일 에러가 발생하지 않음.

@@ -13,4 +13,11 @@
 <fullyQualifiedTypeName name="sec2.RemoteControl"/>
 <fullyQualifiedTypeName name="sec2.Television"/>
 <fullyQualifiedTypeName name="sec3.Soundable"/>
+<fullyQualifiedTypeName name="sec3.Dbjob"/>
+<fullyQualifiedTypeName name="sec1.OuterClass.Inner"/>
+<fullyQualifiedTypeName name="sec1.OuterClass.Inner2"/>
+<fullyQualifiedTypeName name="sec2.Car.Tire"/>
+<fullyQualifiedTypeName name="sec2.Car.Engine"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 </qualifiedTypeNameHistroy>

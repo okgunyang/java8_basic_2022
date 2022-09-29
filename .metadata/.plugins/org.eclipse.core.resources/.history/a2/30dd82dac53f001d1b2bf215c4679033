@@ -1,0 +1,10 @@
+package sec2;
+
+public class UserException1 {
+	public static void main(String[] args) {
+		method1();
+	}
+	public static void method1() throws RunException {
+		throw new RunException("사용자 예외");
+	}
+}

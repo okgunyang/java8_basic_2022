@@ -1,0 +1,9 @@
+package sec1;
+
+public class Exception5 {
+	try {
+		Class cla = Class.forName("java.lang.String");
+	} catch(Exception e){
+		
+	}
+}

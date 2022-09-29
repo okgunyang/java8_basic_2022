@@ -1,0 +1,14 @@
+package sec1;
+//예외(Exception) 처리 : 프로그래밍에서 로직상 에러가 발생하면, 작동이 중지가 되버리기 때문에
+//이와 같은 경우를 예외가 발생한 것으로 간주하고, 그 발생된 장애를 미리 예측하여 작동이 중지되지 않고,
+//계속 실행될 수 있도록 처리를 하는 것
+public class Exception1 {
+	public static void main(String[] args) {
+		String data = null;
+		try {
+			System.out.println(data.toString());
+		} catch(Exception e){
+			
+		}
+	}
+}

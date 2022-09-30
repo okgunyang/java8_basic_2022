@@ -1,0 +1,8 @@
+package sec2;
+import java.util.Objects;
+public class UtilObjectsEx3 {
+	Student s1;
+	Student s2 = new Student(4, "정진석");
+	Student s3 = new Student(5, "지각생");
+	Objects.nonNull(s2);
+}

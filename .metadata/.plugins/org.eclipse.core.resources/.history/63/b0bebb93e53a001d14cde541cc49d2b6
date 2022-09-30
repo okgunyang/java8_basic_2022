@@ -1,7 +1,0 @@
-package sec3;
-
-public class Singletone {
-	private static Singletone single = new Singletone();
-	private Singletone() {}
-	
-}

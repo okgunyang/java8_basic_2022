@@ -1,7 +1,0 @@
-package kr.co.thejoeun.view;
-
-import kr.co.thejoeun.controller.CarCtrl;
-
-public class CarView extends CarCtrl {
-
-}

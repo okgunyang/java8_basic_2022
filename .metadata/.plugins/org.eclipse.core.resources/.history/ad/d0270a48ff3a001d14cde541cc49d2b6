@@ -1,8 +1,0 @@
-package sec4;
-
-public class BankApplication {
-	public static void main(String[] args) {
-		private static Account2[] accountArray = new Account2[100];
-		
-	}
-}

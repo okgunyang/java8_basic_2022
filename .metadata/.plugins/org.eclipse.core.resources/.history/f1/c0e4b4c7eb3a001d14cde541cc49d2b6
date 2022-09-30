@@ -1,9 +1,0 @@
-package kr.co.thejoeun.controller;
-
-public class CarCtrl3 {
-	public static void main(String[] args) {
-		CarCtrl car1 = new CarCtrl();
-		car1.item1 = 20;
-		
-	}
-}

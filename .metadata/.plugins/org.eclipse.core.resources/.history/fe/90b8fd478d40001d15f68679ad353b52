@@ -1,0 +1,12 @@
+package sec3;
+
+import sec2.Student;
+
+public class SystemEx2 {
+	public static void main(String[] args) {
+		Student st;
+		st = new Student();
+		st = null;
+		
+	}
+}

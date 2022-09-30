@@ -1,8 +1,0 @@
-package kr.co.thejoeun.controller;
-
-public class CarCtrl2 extends CarCtrl {
-	
-	public int getItem1(){
-		
-	}
-}

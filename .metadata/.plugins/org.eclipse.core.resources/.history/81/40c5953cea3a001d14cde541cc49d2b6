@@ -1,7 +1,0 @@
-package kr.co.thejoeun.controller;
-
-import kr.co.thejoeun.CarDTO;
-
-public class CarCtrl {
-	CarDTO car1 = new CarDTO();
-}

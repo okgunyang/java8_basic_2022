@@ -1,0 +1,335 @@
+1. Object  클래스에 대한 설명 중 틀린 것은 ?
+1) 모든 자바 클래스의 최상위 부모 클래스이다.
+2) Object의 equals() 메소드는 == 연산자와 동일하게 번지를 비교한다.
+3) Object의 clone() 메소드는 얕은 복사를 한다.
+4) Object의 toString() 메소드는 객체의 필드값을 문자열로 리턴한다.
+
+정답 : 4 
+
+toString() 메소드로 객체의 필드값을 문자열로 리턴하려면 따로 toString 메소드를 재정의 해주어야 한다.
+
+
+
+2. 여러분이 작성하는 클래스를 동등 비교하는 컬렉션 객체인 HashSet, HashMap, Hashtable을 사용하려고 합니다.
+ Object의 equals()와 hashCode() 메서드를 오버라이딩했다고 가정할 경우, 메소드 호출 순서를 생각하고 다음 괄호 ( ) 안을 채워보세요
+
+			같음					true
+(             ) 리턴값	-------------------> (             ) 리턴값 ----------------------> 동등 객체
+	|				|
+	|				|
+	|				|
+	|				|
+	|--------------------------> 다른 객체
+
+
+답안 : hashCode() , equals()
+
+
+
+
+
+
+
+3. Student 클래스를 작성하되, Object의 equals() 와 hashCode()를 오버라이딩해서 Student의 학번(studentNum)이 같으면 동등 객체가 될 수 있도록 하시오. hashCode()의 리턴값은 studentNum 필드값의 해시코드를 리턴하도록 하시오.
+
+[Student.java]
+
+public class Student {
+    private String studentNum;
+    
+    public Student(String studentNum) {
+        this.studentNum = studentNum;
+    }
+    
+    public String getStudentNum() {
+        return studentNum;
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof Student) {
+            Student student = (Student) o;
+            if (studentNum.equals(student.studentNum)) {
+                return true;
+            }
+        }
+        return false;
+    }
+  
+    @Override
+    public int hashCode() {
+        return studentNum.hashCode();
+    }
+}
+ 
+
+[StudentExample.java]
+
+import java.util.HashMap;
+ 
+public class StudentExample {
+ 
+    public static void main(String[] args) {
+        //Student 키로 총점을 저장하는 HashMap 객체 생성
+        HashMap<Student, String> hashMap = new HashMap<Student, String>();
+        
+        //new Student("1")의 점수 95 저장
+        hashMap.put(new Student("1"), "95");
+        
+        //new Student("1")로 점수를 읽어옴
+        String score = hashMap.get(new Student("1"));
+        System.out.println("1번 학생의 총점 : "+score);
+ 
+    }
+ 
+}
+ 
+
+
+
+
+
+
+4. Member 클래스를 작성하되, Object의 toString() 메소드를 오버라이딩해서 MemberExample 클래스의 실행 결과처럼 나오도록 작성하자.
+
+[Member.java]
+public class Member {
+    private String id;
+    private String name;
+    
+    public Member(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    
+    @Override
+    public String toString() {
+        return id + " : " + name;
+    }
+}
+ 
+
+[MemberExample.java]
+
+public class MemberExample {
+ 
+    public static void main(String[] args) {
+        Member member = new Member("blue", "이파란");
+        System.out.println(member);
+    }
+}
+ 
+
+
+
+ 
+
+5. Class 객체에 대한 설명 중 틀린 것은 무엇인가?
+   1) Class.forName() 메소드 또는 객체의 getClass() 메소드로 얻을 수 있다.
+   2) 클래스의 생성자, 필드, 메소드에 대한 정보를 알아낼 수 있다.
+   3) newInstance() 메소드는 기본 생성자를 이용해서 객체를 생성시킨다.
+   4) newInstance()의 리턴 타입은 생성된 객체의 클래스 타입이다.
+ 
+
+newInstance() 메소드의 리턴타입은 Object이므로 원래 클래스 타입으로 변환해야만 메소드를 사용할 수 있다.
+
+ 
+
+ 
+
+
+
+
+
+6. 다음에 주어진 바이트 배열을 문자열로 변환시켜보자.
+ 
+
+{73, 32, 108, 111, 118, 101, 32, 121, 111, 117};
+
+public class BytesToStringExample {
+ 
+    public static void main(String[] args) {
+        byte[] bytes = {73, 32, 108, 111, 118, 101, 32, 121, 111, 117};
+        String str = new String(bytes);
+        System.out.println(str);
+    }
+}
+
+
+
+
+
+
+
+7. 다음 문자열에서 "자바" 문자열이 포함되어 있는지 확인하고, "자바"를 Java로 대치한 새로운
+문자열을 만들어보자.
+ 
+
+"모든 프로그램은 자바 언어로 개발될 수 있다."
+
+ 
+
+[FindAndReplaceExample.java]
+
+public class FindAndReplaceExample {
+ 
+    public static void main(String[] args) {
+        String str = "모든 프로그램은 자바 언어로 개발될 수 있다.";
+        int index = str.indexOf("자바");
+        
+        if (index == -1) { 
+            System.out.println("자바 문자열이 포함되어 있지 않습니다.");
+        } else {
+            System.out.println("자바 문자열이 포함되어 있습니다.");
+            str = str.replace("자바", "Java");
+            System.out.println("-->" + str);
+        }
+ 
+    }
+ 
+}
+
+
+
+
+ 
+
+
+ 
+
+8. 다음 문자열에서 쉼표(,)로 구분되어 있는 문자열을 String의 split() 또는 StringTokenizer를 이용해서 분리해보자.
+아이디, 이름, 패스워드
+
+import java.util.StringTokenizer;
+ 
+public class SplitExample {
+ 
+    public static void main(String[] args) {
+        String str = "아이디,이름,패스워드";
+        
+        //방법1 (split() 메소드 사용)
+        String[] str1 = str.split(",");
+        for (int i = 0 ; i < str1.length; i++) {
+            System.out.println(str1[i]);
+        }
+        System.out.println();
+        //방법2 StringTokenizer 사용
+        StringTokenizer st = new StringTokenizer(str);
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken(","));
+        }
+    }
+}
+
+ 
+
+
+
+
+
+9.  다음 코드는 1부터 100까지의 숫자를 통 문자열로 만들기 위해서 += 연산자를 이용해서 100번 반복하고 있다. 이것은 곧 100개 이상의 String 객체를 생성하는 결과를 반들기 때문에 좋은 코드라고 볼 수 없다. StringBuilder를 사용해서 좀 더 효율적인 코드로 개선시켜 보자.
+[StringBuilderExample.java]
+
+public class StringBuilderExample {
+ 
+    public static void main(String[] args) {
+        String str = "";
+        for (int i = 0 ; i <= 100; i++) {
+            str += i;
+        }
+        System.out.println(str);
+        
+        // 개선 코드 작성 위치
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0 ; i <= 100; i++) {
+            sb.append(i);
+        }
+        System.out.println(sb);
+    }
+}
+
+
+
+
+
+
+
+10. 첫 번째는 알파벳으로 시작하고 두 번째부터 숫자와 알파벳으로 구성된 8자~12자 사이의 ID값인지 검사하고 싶다. 알파벳은 대소문자를 모두 허용할 경우에 정규 표현식을 이용해서 검증하는 코드를 작성해보자.
+[PatternMatcherExample.java]
+
+import java.util.regex.Pattern;
+ 
+public class PatternMatcherExample {
+ 
+    public static void main(String[] args) {
+        String id = "5Angel1004";
+        String regExp = "[a-zA-Z][a-zA-Z0-9]{7,11}";
+        boolean isMatch = Pattern.matches(regExp, id);
+        if (isMatch) {
+            System.out.println("ID로 사용할 수 있습니다.");
+        } else {
+            System.out.println("ID로 사용할 수 없다.");
+        }
+    }
+}
+
+
+
+
+
+
+11. 숫자 100과 300으로 각각 박싱된 Integer 객체를 == 연산자로 비교하였다. 100을 박싱한 Integer 객체는 true가 나오는데, 300을 박싱한 Integer 객체는 false가 나오는 이유를 설명하시오.
+ 
+public class IntegerCompareExample {
+ 
+    public static void main(String[] args) {
+        Integer obj1 = 100;
+        Integer obj2 = 100;
+        Integer obj3 = 300;
+        Integer obj4 = 300;
+        
+        System.out.println( obj1 == obj2);
+        System.out.println( obj3 == obj4);
+    }
+}
+
+이유 : int값이 -128 ~ 127 사이라면 내부의 값을 비교 가능하지만 범위를 벗어나면 객체의 번지를 비교하기 때문이다.
+
+
+
+ 
+
+
+12. 문자열 "200"을 정수로 변환하는 코드와 숫자 150을 문자열로 변환하는 코드를 작성해보자.
+
+public class StringConvertExample {
+ 
+    public static void main(String[] args) {
+        String strData1 = "200";
+        int intData1 = Integer.parseInt(strData1);
+        
+        int intData2 = 150;
+        String strData2 = Integer.toString(150);
+    }
+}
+
+
+
+ 
+
+13. SimpleDateFormat 클래스를 이용해서 오늘의 날짜를 다음과 같이 출력하는 코드를 작성해보자.
+
+2022년 10월 04일 화요일 16시 04분
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+ 
+public class DatePrintExample {
+ 
+    public static void main(String[] args) {
+        Date now = new Date();
+        System.out.println(now);
+        SimpleDateFormat sdf = new SimpleDateFormat("YYYY년 MM월 DD일 E요일 k시 m분");
+        System.out.println(sdf.format(now));
+    }
+}

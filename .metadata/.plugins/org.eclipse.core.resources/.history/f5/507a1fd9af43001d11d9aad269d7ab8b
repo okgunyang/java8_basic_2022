@@ -1,0 +1,12 @@
+package sec8;
+
+public class TimezoneEx1 {
+
+	public static void main(String[] args) {
+		String[] availableIDs = TimeZone.getAvailableIDs();
+		for(String id : availableIDs) {
+			System.out.println(id);
+		}
+	}
+
+}

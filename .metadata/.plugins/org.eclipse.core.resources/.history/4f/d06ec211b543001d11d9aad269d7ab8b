@@ -1,0 +1,10 @@
+package sec10.verify11;
+
+public class IntegerCompareExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

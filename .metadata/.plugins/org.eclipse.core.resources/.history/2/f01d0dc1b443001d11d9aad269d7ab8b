@@ -1,0 +1,10 @@
+package sec10.verify08;
+
+public class SplitExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

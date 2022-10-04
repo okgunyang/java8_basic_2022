@@ -1,0 +1,10 @@
+package sec10.verify10;
+
+public class PatternMatcherExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

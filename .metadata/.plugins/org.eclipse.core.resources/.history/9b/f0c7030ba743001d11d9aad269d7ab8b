@@ -1,0 +1,32 @@
+package sec4;
+
+public class StringEx3 {
+	public static void main(String[] args) {
+		String str1 = new String("");
+		str1+="김지은";
+		str1+=" ";
+		str1+="박평화";
+		str1+=" ";
+		str1+="강병수";
+		System.out.println("출력1 : "+str1);
+		
+		//요소 추가 및 변경
+		StringBuffer str2 = new StringBuffer();
+		str2.append("김지은");
+		str2.append(" ");
+		str2.append("박평화");
+		str2.append(" ");
+		str2.append("강병수");
+		System.out.println("출력2 : "+str2.toString());
+		
+		str2.replace(0, 3, "김기태");
+		System.out.println("출력3 : "+str2.toString());
+		
+		StringBuilder str3 = new StringBuilder();
+		str3.append("김지은");
+		str3.append(" ");
+		str3.append("박평화");
+		str3.append(" ");
+		str3.append("강병수");
+	}
+}

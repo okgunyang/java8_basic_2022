@@ -1,0 +1,10 @@
+package sec10.verify12;
+
+public class StringConvertExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package sec4;
+
+public class StringEx1 {
+	public static void main(String[] args) {
+		String str1 = new String("KimGiTae");
+		
+		System.out.println("str1="+str1);
+		System.out.println("네 번째 글자 : "+str1.charAt(3));
+		System.out.println("문자열 비교 : "+str1.equals("kimkitae"));
+		
+		byte[] char1 = str1.getBytes();
+		System.out.println("char1은 문자열을 한 글자씩 분리 : "+char1);
+	}
+}

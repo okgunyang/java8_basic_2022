@@ -1,0 +1,14 @@
+package sec5;
+
+import java.util.Arrays;
+
+public class ArraysEx1 {
+	public static void main(String[] args) {
+		char[] arr = {'j','a','v','a',' ','o','b','j','e','c','t'};
+		System.out.println(arr);
+		char[] arr2 = Arrays.copyOf(arr, arr.length);  //문자 배열 전체 복사
+		System.out.println(arr2);
+		char[] arr3 = Arrays.copyOfRange(arr, 0, 4);
+		System.out.println(arr3);
+	}
+}

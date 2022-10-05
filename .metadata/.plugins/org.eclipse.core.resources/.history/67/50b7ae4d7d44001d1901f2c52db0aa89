@@ -1,0 +1,17 @@
+package sec1;
+
+public class ClassEx2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}
+class Moving<K, V>{
+	K key;
+	V value;
+}
+class Car{
+	
+}
+class Tire{
+	
+}

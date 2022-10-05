@@ -1,0 +1,27 @@
+package sec1;
+
+public class ClassEx0 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Generic<T> {
+	T a;
+}
+class Member {
+	General g;
+	Student s1;
+	Salary s2;
+}
+class General {
+	
+}
+class Student {
+	
+}
+class Salary {
+	
+}

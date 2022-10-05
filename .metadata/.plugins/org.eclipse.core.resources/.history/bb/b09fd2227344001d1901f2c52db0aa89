@@ -1,0 +1,13 @@
+package sec1;
+//멀티 쓰레드 상에서 같은 작업 그룹에 속할 수도 있으며, 각기 다른 작업들을 하나의 작업 그룹으로 설정도 할 수 있다.
+//멀티 쓰레드에서 A쓰레드가 CPU 안에서 동작되다가 B쓰레드가 처리되기 위해 CPU 안으로 로딩되면, 처리되던 A쓰레드는 
+//B쓰레드가 있던 캐시 메모리의 자리로 이동된다. -> 문맥교환(Context switching)
+//이러한 일이 자주 일어 나게 된다면, 캐시 메모리에 계속 쓰던 자리만 쓰게 됩니다. -> 지역성(locality)
+//만약, 캐시 메모리가 차게 되면, 그 데이터는 메인 메모리로 이동되고,
+//메인 메모리마저 꽉 차게 되면, 가상 메모리를 이용하게 된다.
+//어떤 메모리에도 CPU가 찾는 데이터가 없을 수도 있는 현상이 발생하게 된다. -> 쓰레싱(Threashing)
+public class ThreadEx3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}

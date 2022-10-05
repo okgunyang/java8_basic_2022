@@ -1,0 +1,18 @@
+package sec1;
+
+public class ClassEx2 {
+	public static void main(String[] args) {
+		Moving<Car, Tire> m1 = Moving<>();
+		
+	}
+}
+class Moving<K, V>{
+	K key;
+	V value;
+}
+class Car{
+	
+}
+class Tire{
+	
+}

@@ -1,0 +1,11 @@
+package sec1;
+//쓰레드(Thread) 
+public class ThreadEx1 {
+	public static void main(String[] args) {
+		//ThreadRunnable로 부터 상속받아 오버라이딩
+		Thread th1 = new Thread(new ThreadWithRunnable());
+		//Thread로 부터 상속받아 오버라이딩
+		ThreadWithClass th2 = new ThreadWithClass();
+		
+	}
+}

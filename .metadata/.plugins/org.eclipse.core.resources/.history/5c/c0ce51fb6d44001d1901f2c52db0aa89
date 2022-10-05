@@ -1,0 +1,35 @@
+package sec1;
+
+public class ThreadEx2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+class ThreadWithClass extends Thread {
+	public void run(){
+		for(int i=0;i<5;i++){
+			System.out.println(this.getName());
+			try {
+				Thread.sleep(1000); //1000 밀리초(ms)=1초 이므로 0.01초
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} 
+		}
+	}
+}
+//Runnable은 인터페이스이므로 반드시 오버라이딩하여 해당 메소드를 구현체로 기술
+class ThreadWithRunnable implements Runnable { 
+	@Override
+	public void run() {
+		for(int i=0;i<5;i++){
+			//현재 실행 중인 쓰레드의 이름 출력
+			System.out.println(Thread.currentThread().getName());
+			try {
+				Thread.sleep(1000);	//0.01초의 딜레이
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

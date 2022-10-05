@@ -1,0 +1,35 @@
+package sec1;
+
+import java.util.Map;
+
+public class ClassEx2 {
+	public static void main(String[] args) {
+		Moving<String, Integer> m1 = new Moving<>();		
+	}
+}
+class Moving<K, V> implements Map.Entry<K, V>{	//key, value 를 타입에서 활용 가능함(=Dictionary) 
+	private K key;
+	private V value;
+	
+	public Moving(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+    public K getKey(){
+        return this.key;
+    }
+    public V getValue(){
+        return this.value;
+    }
+	@Override
+	public V setValue(V value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+class Car{
+	
+}
+class Tire{
+	
+}

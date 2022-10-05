@@ -11,6 +11,7 @@ public class ClassEx2 {
 class Moving<K, V> {	//key, value 를 타입에서 활용 가능함(=Dictionary) 
 	private K key;
 	private V value;
+
 }
 class Car{
 	

@@ -16,7 +16,7 @@ public class ClassEx1 {
 		}
 	}
 }
-class AnimalList<T extends LandAnimal>{  //LandAnimal 또는 그 자식 클래스로 한정지을 경우
+class AnimalList<T extends LandAnimal>{
 	ArrayList<T> lst = new ArrayList<T>();
 	void add(T animal) { lst.add(animal); }
 	T get(int index) { return lst.get(index); }

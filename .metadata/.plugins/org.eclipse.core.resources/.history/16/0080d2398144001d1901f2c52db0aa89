@@ -1,0 +1,32 @@
+package sec1;
+
+import java.util.Map;
+
+public class ClassEx2 {
+	public static void main(String[] args) {
+		
+		//Moving<Integer, String> m1 = Moving<>();
+		
+	}
+}
+class Moving implements Map.Entry<K, V>{	//key, value 를 타입에서 활용 가능함(=Dictionary) 
+	private K key;
+	private V value;
+	
+	public Moving(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+    public K getKey(){
+        return this.key;
+    }
+    public V getValue(){
+        return this.value;
+    }
+}
+class Car{
+	
+}
+class Tire{
+	
+}

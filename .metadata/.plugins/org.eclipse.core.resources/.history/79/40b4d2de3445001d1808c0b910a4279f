@@ -1,0 +1,21 @@
+package sec1;
+
+public class ClassEx4 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}
+class Ancestor { }
+class Parent<T> { }
+class Descendant<T> extends Ancestor { }
+class Child extends Parent { }
+class Obj<? extends T> { 
+	private T t;
+	public T get() { return t; }
+	public void set(T t) { this.t = t; }
+}
+class Info<? super T> {
+	private T t;
+	public T get() { return t; }
+	public void set(T t) { this.t = t; }
+}

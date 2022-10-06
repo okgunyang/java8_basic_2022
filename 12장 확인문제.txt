@@ -21,7 +21,7 @@ public class ThreadExample {
         Thread thread1 = new MovieThread();
         thread1.start();
         
-        Thread thread2 = new Thread(new MusicRunnalbe());
+        Thread thread2 = new Thread(new MusicRunnable());
         thread2.start();
     }
 }
@@ -45,7 +45,7 @@ public class MovieThread extends Thread {
 
 
 [MusicRunnable.java]
-public class MusicRunnalbe implement Runnalbe{
+public class MusicRunnable implement Runnable{
     @Override
     public void run() {
         for (int i = 0 ; i < 3;i++) {

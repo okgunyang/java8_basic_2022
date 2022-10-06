@@ -1,0 +1,16 @@
+package sec1;
+
+public class ClassEx4 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}
+class Ancestor { }
+class Parent { }
+class Descendant extends Ancestor { }
+class Child extends Parent { }
+class Data<? extends T> { 
+	private T t;
+	
+}
+class Info<? super T> { }

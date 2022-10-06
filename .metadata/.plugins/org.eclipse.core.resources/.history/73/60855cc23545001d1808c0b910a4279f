@@ -1,0 +1,11 @@
+package sec1;
+
+public class Lambda1 {
+	//일반 메소드 정의
+	public int method1(int x, int y){
+		return x+y;
+	}
+	/* 람다식 구현방식 
+	(x, y) -> { x+y };
+	*/
+}

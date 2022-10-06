@@ -1,0 +1,14 @@
+package sec1;
+@FunctionalInterface
+interface Calc {
+		public void method1();
+}
+
+public class Lambda2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

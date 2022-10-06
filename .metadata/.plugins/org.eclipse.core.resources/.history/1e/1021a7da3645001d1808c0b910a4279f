@@ -1,0 +1,27 @@
+package sec1;
+//함수적 인터페이스 - 하나의 인터페이스는 하나의 메소드만 추상체로 정의할 수 있음
+@FunctionalInterface
+interface Calc1 {
+		public void method1();
+}
+
+@FunctionalInterface
+interface Calc2 {
+	public void method2(int x, int y);
+}
+
+@FunctionalInterface
+interface Calc3 {
+	public int method2();
+}
+
+@FunctionalInterface
+interface Calc4 {
+	public int method2(int x, int y);
+}
+
+public class Lambda2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}

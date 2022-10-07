@@ -1,9 +1,0 @@
-package sec2;
-
-public class CellPhone {
-	String model;
-	String color;
-	public void powerOn() { System.out.println("전원을 켭니다."); }
-	public void powerOff() { System.out.println("전원을 끔니다."); }
-	
-}

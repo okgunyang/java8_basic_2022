@@ -1,8 +1,0 @@
-package sec3;
-
-public class Dog implements Soundable {
-	@Override
-	String sound() {
-		System.out.println("멍멍");
-	}
-}

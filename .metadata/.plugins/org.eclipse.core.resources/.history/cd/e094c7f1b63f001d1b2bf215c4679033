@@ -1,6 +1,0 @@
-package sec2;
-
-public class Anonymous {
-	//익명의 Vehicle를 생성 
-	Vehicle field = 
-}

@@ -1,0 +1,13 @@
+package sec2;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import sec1.Student;
+
+public class ListEx4 {
+	public static void main(String[] args) {
+		List<Student> sList = new LinkedList<Student>();
+		
+	}
+}

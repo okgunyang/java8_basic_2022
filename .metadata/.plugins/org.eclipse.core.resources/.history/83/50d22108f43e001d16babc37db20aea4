@@ -1,5 +1,0 @@
-package sec1;
-
-public class Clazz implements Interface1, interface2 {
-	
-}

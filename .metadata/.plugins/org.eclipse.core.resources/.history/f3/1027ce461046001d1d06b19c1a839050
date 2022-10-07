@@ -1,0 +1,32 @@
+package sec3;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class SetEx1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Set<String> set1 = new HashSet<String>();
+		Set<String> set2 = new HashSet<String>();
+		set1.add("김연정");
+		set1.add("남송윤");
+		set1.add("강병수");
+		set1.add("김기태");
+		set1.add("남송윤");
+		set1.add("유광현");
+		set1.add("김기태");
+		System.out.println(set1);
+		System.out.println("찾을 사람 입력");
+		String name = sc.next();
+		if(set1.contains(name)){ //해당 데이터 존재 유무
+			System.out.println("해당 데이터가 존재합니다.");
+		}
+		System.out.println("건수 : "+set1.size());
+		if(set2.isEmpty()){	//객체의 널값 비교
+			System.out.println("set2가 비어 있습니다.");
+		}
+		set1.remove("김기태");		//요소 삭제
+		set1.clear();  //비우기=모든 요소 삭제
+	}
+}

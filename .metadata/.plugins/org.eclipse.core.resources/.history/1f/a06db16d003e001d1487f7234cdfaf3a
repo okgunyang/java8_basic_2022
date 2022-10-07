@@ -1,7 +1,0 @@
-package sec2;
-
-public final class FinalClass {
-	int item1;
-	String item2;
-}
-

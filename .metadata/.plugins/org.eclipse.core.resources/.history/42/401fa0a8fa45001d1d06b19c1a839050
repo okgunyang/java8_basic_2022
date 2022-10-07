@@ -1,0 +1,7 @@
+package sec1;
+//컬렉션 프레임워크(Collection Framework) : 자주 사용하는 여러 데이터를 저장할 자료형의 자료구조
+public class CollectionEx1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}

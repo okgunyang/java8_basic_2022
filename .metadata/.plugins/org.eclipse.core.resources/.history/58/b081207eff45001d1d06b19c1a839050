@@ -1,0 +1,26 @@
+package sec2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListEx1 {
+	public static void main(String[] args) {
+		List<String> lst1 = new ArrayList<String>();
+		lst1.add("김태엽");	//요소 추가
+		lst1.add("유광현");
+		lst1.add("한태헌");
+		System.out.println(lst1);
+		if(lst1.contains("유기태")){ //해당 요소의 존재 유무 파악
+			System.out.println("해당 데이터가 존재합니다.");
+		}
+		List<String> lst2 = new ArrayList<String>();
+		if(lst2.isEmpty()){  //해당 빈 리스트 검증 
+			System.out.println("리스트가 비어 있습니다.");
+			lst2.add("안효준");
+		} else {
+			lst2.clear();	//리스트 비우기
+		}
+		
+		
+	}
+}

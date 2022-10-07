@@ -1,6 +1,0 @@
-package sec2;
-
-public class Television implements  RemoteControl {
-	private int volume;
-	
-}

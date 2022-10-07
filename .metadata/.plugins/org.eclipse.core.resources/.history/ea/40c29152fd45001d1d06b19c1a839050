@@ -1,0 +1,11 @@
+package sec1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CollectionEx4 {
+	public static void main(String[] args) {
+		Map map1 = new HashMap();
+		
+	}
+}

@@ -1,9 +1,0 @@
-package sec1;
-
-public class Exception5 {
-	try {
-		Class cla = Class.forName("oracle.jdbc.driver");
-	} catch(Exception e){
-		
-	}
-}

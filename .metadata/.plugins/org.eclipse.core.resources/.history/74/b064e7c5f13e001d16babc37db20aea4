@@ -1,9 +1,0 @@
-package sec1;
-//인터페이스는 완전 추상체이다.
-public interface Interface1 {
-	int MAX = 20;  //상수 필드
-	int MIN = 1;
-	
-	void method1();
-	int method2(int pa1, String pa2);
-}

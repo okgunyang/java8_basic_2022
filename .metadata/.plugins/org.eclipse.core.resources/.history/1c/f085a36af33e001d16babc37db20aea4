@@ -1,5 +1,0 @@
-package sec1;
-//인터페이스로 부터 상속 받는 클래스는 implements
-public class Class1 implements Interface1 {
-		
-}

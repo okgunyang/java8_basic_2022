@@ -1,0 +1,18 @@
+package sec1;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Properties;
+import java.util.TreeMap;
+
+public class CollectionEx4 {
+	public static void main(String[] args) {
+		Map map1 = new HashMap();
+		map1 = new Hashtable();
+		map1 = new TreeMap();
+		map1 = new Properties();
+		
+		
+	}
+}

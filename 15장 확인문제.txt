@@ -1,0 +1,294 @@
+1. 자바의 컬렉션 프레임워크에 대한 설명으로 틀린 것은 무엇입니까?
+   1) List 컬렉션은 인덱스로 객체를 관리하며 중복 저장을 허용한다.
+   2) Set 컬렉션은 순서를 유지하지 않으며 중복 저장을 허용하지 않는다.
+   3) Map 컬렉션은 키와 값으로 구성된 Map.Entry를 저장한다.
+   4) Stack은 FIFO(선입선출) 자료구조를 구현한 클래스이다.
+
+   정답 : 4
+
+   풀이 : Stack은 LIFO(후입선출) 자료구조를 구현한 클래스이다.
+
+
+
+
+
+ 
+
+2. List 컬렉션에 대한 설명 중 틀린 것은 무엇입니까?
+   1) 대표적인 구현 클래스로는 ArrayList, Vector, LinkedList가 있다.
+   2) 멀티 스레드 환경에서는 ArrayList보다는 Vector스레드가 안전하다.
+   3) ArrayList에서 객체를 삭제하면 삭제된 위치는 비어 있게 된다.
+   4) 중간 위치에 객체를 빈번히 삽입하거나 제거할 경우 LinkedList를 사용하는 것이 좋다.
+
+   정답 : 3
+
+   풀이 : ArrayList에서 객체를 삭제하면 뒤에 있던 객체들이 자동적으로 삭제된 위치를 채우게 된다.
+
+
+
+
+
+ 
+
+3. Set 컬렉션에 대한 설명 중 틀린 것은 무엇입니까?
+   1) 대표적인 구현 클래스로는 HashSet, LinkedHashSet, TreeSet이 있다.
+   2) Set 컬렉션에서 객체를 하나씩 꺼내오고 싶다면 Iterator를 이용한다.
+   3) HashSet은 hashCode() 와 equals()를 이용해서 중복된 객체를 판별한다.
+   4) Set 컬렉션에는 null을 저장할 수 없다.
+
+   정답 : 4
+
+   풀이 : Set 컬렉션에는 null을 하나 저장할 수 있다.
+
+
+
+
+
+ 
+
+4. Map 컬렉션에 대한 설명 중 틀린 것은 무엇입니까?
+   1) 대표적인 구현 클래스로는 HashMap, Hashtable, TreeMap, Properties가 있다.
+   2) HashMap과 Hashtable은 hashCode()와 equals()를 이용해서 중복키를 판별한다.
+   3) 멀티 스레드 환경에서는 Hashtable보다는 HashMap이 스레드에 안전하다.
+   4) Properties는 키와 값이 모두 String 타입니다.
+
+   정답 : 3
+
+   풀이 : Hashtable은 동기화된(synchronized) 메소드로 구성되어 있기 때문에 멀티 스레드 환경에서는 HashMap보다 Hashtable이 안전하다.
+
+
+
+
+
+ 
+
+5. 단일(싱글) 스레드 환경에서 Board 객체를 저장 순서에 맞게 읽고 싶습니다. 가장 적합한 컬렉션을 생성하도록 코드를 작성해보세요.
+
+   List<Board> = new ArrayList<Board>();
+
+
+
+
+
+ 
+
+6. 단일(싱글) 스레드 환경에서 학번(String)을 키로, 점수(Integer)를 값으로 저장하는 가장 적합한 컬렉션을 생성하도록 코드를 작성해보세요
+
+   Map<String, Integer> = new HashMap<String, Integer>();
+
+ 
+
+
+
+
+
+7. BoardDao 객체의 getBoardList() 메소드를 호출하면 List<Board> 타입의 컬렉션을 리턴합니다. ListExample 클래스를 실행시켰을 때 다음과 같이 출력될 수 있도록 BoardDao의 getBoardList()메소드를 작성해보세요.
+[ListExample.java]
+import java.util.List;
+ 
+public class ListExample {
+    public static void main(String[] args) {
+        BoardDao dao = new BoardDao();
+        List<Board> list = dao.getBoardList();
+        for(Board board : list) {
+            System.out.println(board.getTitle() + " - " + board.getContent());
+        }
+    }
+}
+
+[Board.java]
+public class Board {
+    private String title;
+    private String content;
+    
+    public Board(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+    public String getContent() {
+        return content;
+    }
+}
+
+[BoardDao.java]
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class BoardDao {
+    //코드 작성
+    public List<Board> getBoardList() {
+        List<Board> list = new ArrayList<Board>();
+        list.add(new Board("제목1","내용1"));
+        list.add(new Board("제목2","내용2"));
+        list.add(new Board("제목3","내용3"));
+        
+        return list;
+    }
+}
+
+결과
+제목1 - 내용1
+제목2 - 내용2
+제목3 - 내용3
+
+
+ 
+
+
+ 
+
+8. HashSet에 Student 객체를 저장하려고 합니다. 학번이 같으면 동일한 Student라고 가정하고 중복 저장이 되지 않도록 하고 싶습니다. Student 클래스에서 재정의해야 하는 hashCode()와 equals() 메소드의 내용을 채워보세요. Student의 해시코드는 학번이라고 가정합니다.
+
+[HashSetExample.java]
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+ 
+public class HashSetExample {
+ 
+    public static void main(String[] args) {
+        Set<Student> set = new HashSet<Student>();
+ 
+        set.add(new Student(1, "홍길동"));
+        set.add(new Student(2, "신용권"));
+        set.add(new Student(1, "조민우")); //학번이 같으므로 저장되지 않음
+ 
+        Iterator<Student> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            Student student = iterator.next();
+            System.out.println(student.studentNum + " : " + student.name);
+        }
+    }
+}
+
+
+[Student.java]
+public class Student {
+    public int studentNum;
+    public String name;
+    
+    public Student (int studentNum, String name) {
+        this.studentNum = studentNum;
+        this.name = name;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Student) {
+            Student student = (Student) obj;
+            if (student.studentNum == studentNum) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    
+    @Override
+    public int hashCode() {
+        return studentNum;
+    }
+}
+
+결과 : 조민우는 저장되지 않음
+1 : 홍기동
+2 : 신용권
+
+
+
+
+
+
+9. HashMap에 아이디(String)와 점수(Integer)가 저장되어 있습니다. 실행 결과와 같이 평균점수를 출력하고, 최고 점수와 최고 점수를 받은 아이디를 출력해보세요.
+
+[MapExample.java]
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+ 
+public class MapExample {
+ 
+    public static void main(String[] args) {
+        Map<String,Integer> map = new HashMap<String,Integer>();
+        
+        map.put("blue", 96);
+        map.put("hong", 86);
+        map.put("white", 92);
+        
+        String name = null; // 최고 점수를 받은 아이디 저장
+        int maxScore = 0;    // 최고 점수 저장
+        int totalScore = 0;    // 점수 합계 저장
+        
+        //작성 위치
+        
+        Set<Map.Entry<String, Integer>> EntrySet = map.entrySet();
+        for (Map.Entry<String, Integer> entry : EntrySet) {
+            if (entry.getValue() > maxScore) {
+                name = entry.getKey();
+                maxScore = entry.getValue();
+            }
+            totalScore += entry.getValue();
+        }
+        int avgScore = totalScore / map.size();
+        System.out.println("평균 점수 : "+ avgScore);
+        System.out.println("최고 점수 : "+ maxScore);
+        System.out.println("최고점수를 받은 아이디 : "+ name);
+    }
+}
+ 
+
+
+
+
+
+10. TreeSet에 Student 객체를 저장하려고 합니다. Student의 score 필드값으로 자동 정렬하도록 구현하고 싶습니다. TreeSet의 last() 메소드를 호출했을 때 가장 높은 score의 Student 객체가 리턴되도록 Student 클래스를 완성해보세요.
+
+[TreeSetExample.java]
+import java.util.TreeSet;
+ 
+public class TreeSetExample {
+ 
+    public static void main(String[] args) {
+        TreeSet<Student> treeSet = new TreeSet<Student>();
+        treeSet.add(new Student("blue",96));
+        treeSet.add(new Student("hong",86));
+        treeSet.add(new Student("white",92));
+        
+        Student student = treeSet.last();
+        System.out.println("최고점수 : " + student.score);
+        System.out.println("최고점수를 받은 아이디 : "+ student.id);
+    }
+}
+ 
+
+[Student.java]
+public class Student implements Comparable<Student>{
+    public String id;
+    public int score;
+    
+    public Student (String id , int score) {
+        this.id = id;
+        this.score =score;
+    }
+    
+    @Override
+    public int compareTo(Student o) {
+        if (score < o.score) {
+            return -1;
+        }else if (score == o.score) {
+            return 0;
+        }else {
+            return 1;
+        }
+    }
+}
+
+결과
+최고점수 : 96
+최고점수를 받은 아이디 : blue
